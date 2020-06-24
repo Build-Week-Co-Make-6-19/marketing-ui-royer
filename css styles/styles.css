@@ -164,7 +164,10 @@ display: none;
 	padding: 2rem;
 }
 /* call to action section */
-
+.body-text{
+	display:flex;
+	flex-direction: column;
+}
 /* buttons */
 .button, .button:visited{
 	padding: 1rem 2rem;
@@ -305,6 +308,7 @@ footer{
 	.body-text{
 		width: 40%;
 		margin: 0;
+		
 	}
 	.solution-texts{
 		order: -1;
