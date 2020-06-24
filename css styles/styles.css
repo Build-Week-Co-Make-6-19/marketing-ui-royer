@@ -243,6 +243,10 @@ footer{
 		justify-content: space-around;
 	}
 	
+	/* adjusting hamburger menu */
+	label[for="input-hamburger"]{
+		font-size: 2rem;
+	}
 }
 @media(min-width:600px){
 	/* adjusting team position */
