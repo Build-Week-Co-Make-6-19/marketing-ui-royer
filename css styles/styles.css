@@ -19,7 +19,6 @@ html{
 	
 }
 h1,h2{
-	padding: 2rem 0;
 	text-align: center;
 	line-height: 1.5;
 }
@@ -28,19 +27,29 @@ h1{
 }
 h2{
 	font-size: 2.8rem;
+	text-transform: uppercase;
+	padding: 2rem 0;
 }
 p,ol{
 	font-size: 1.8rem;
 	font-weight: 300;
 	text-align: center;
 	line-height: 1.5;
+	
+}
+ol{
+	letter-spacing: .12rem;
 }
 a{
 	text-decoration: none;
+	color: var(--black);
 }
 a:hover{
 	text-decoration: dashed;
 
+}
+a:visited{
+	color: var(--black);
 }
 section{
 	margin-bottom: 2rem;
@@ -48,6 +57,13 @@ section{
 img{
 	width: 100%;
 }
+.body-text{
+	display: flex;
+	flex-direction: column;
+	width: 75%;
+	margin: 0 auto;
+}
+
 /* header */
 /* logo */
 .nav-logo{
@@ -60,7 +76,6 @@ img{
 	background-color: var(--black);
 	position: sticky;
 	width: 100vw;
-	margin-bottom: 2vh;
 	display: flex;
 	flex-wrap: wrap;
 }
@@ -98,6 +113,7 @@ display: none;
 	border-top: .062rem solid #333333;
 	background-color: black;
 	text-transform: uppercase;
+	letter-spacing: .2rem;
 }
 .menu-links a:last-child{
 	border-bottom: .062rem solid #333333;
@@ -134,10 +150,46 @@ display: none;
 	justify-content: center;
 	text-align: center;
 	line-height: 1.5;
+	width: 90%;
 }
 .hero-image-texts h1{
 	padding-bottom: 2rem;
 }
 
+/* call to action section */
 
-	
+/* buttons */
+.button, .button:visited{
+	padding: 1rem 2rem;
+	background-color: var(--blue);
+	color: var(--white);
+	text-align: center;
+	margin: 2rem 0 3rem 0;
+}
+.button:hover{
+	background-color: var(--white);
+	color: var(--blue);
+	border: .1rem solid var(--blue);
+}
+
+.sing-up-btn{
+	width: 100%;
+
+}
+
+@media(min-width:800px){
+	.container{
+		display: flex;
+		justify-content: space-between;
+		width: 90%;
+		margin: 0 auto;
+	}
+	.img{
+		width: 40%;
+		display: flex;
+
+	}
+	.body-text{
+		width: 40%;
+	}
+}
