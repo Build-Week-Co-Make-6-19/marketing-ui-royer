@@ -57,12 +57,15 @@ section{
 img{
 	width: 100%;
 }
-.body-text{
+.body-tex,.about-container{
 	display: flex;
 	flex-direction: column;
 	width: 75%;
 	margin: 0 auto;
 }
+
+
+
 
 /* header */
 /* logo */
@@ -181,6 +184,18 @@ display: none;
 
 }
 
+/* font size changes to about page */
+.about-container h1{
+	font-size: 1.3rem;
+	margin: 2rem 0;
+}
+.about-container h2{
+	font-size: 1rem;
+}
+.about-container p{
+	font-size: .8rem;
+}
+
 /* footer */
 footer{
 	background-color: var(--light-gray);
@@ -189,7 +204,32 @@ footer{
 #copy-write{
 	padding: 2rem;
 }
+
+@media(min-width: 500px){
+	/* Adjusting font sizes for about page*/
+	.about-container h1{
+		font-size: 2rem;
+	}
+	.about-container h2{
+		font-size: 1.8rem;
+	}
+	.about-container p{
+		font-size: 1rem;
+	}
+}
 @media(min-width:800px){
+	/* Adjusting font sizes for about page*/
+	.about-container h1{
+		font-size: 4rem;
+	}
+	.about-container h2{
+		font-size: 2.8rem;
+	}
+	.about-container p{
+		font-size: 1.8rem;
+	}
+
+
 	label[for="input-hamburger"]{
 		display: none;
 	}
@@ -200,6 +240,9 @@ footer{
 	.menu-links a{
 		padding: 2rem;
 
+	}
+	.about-container img{
+		height: 50vh;
 	}
 }
 @media(min-width:1000px){
@@ -224,5 +267,12 @@ footer{
 	}
 	#copy-write{
 		margin: 0 auto;
+	}
+	.button{
+		width: 50%;
+		margin: 2rem auto;
+	}
+	.about-container img{
+		height: 80vh;
 	}
 }
