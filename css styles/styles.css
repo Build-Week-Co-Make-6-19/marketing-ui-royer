@@ -70,12 +70,7 @@ img{
 
 
 /* header */
-/* logo */
-.nav-logo{
-	width: 25%;
-	margin: 0 1rem;
-	display: none;
-}
+
 /* hamburger menu */
 #page-nav{
 	background-color: var(--black);
