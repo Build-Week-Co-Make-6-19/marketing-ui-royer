@@ -222,6 +222,16 @@ display: none;
 	padding: 1rem
 }
 
+/* team page */
+.team{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+.team h1{
+	width: 70%;
+}
 /* footer */
 footer{
 	background-color: var(--light-gray);
@@ -335,16 +345,4 @@ footer{
 
 	}
 }
-@media(min-width:1200px){
-	/* adjust meet the team h1 heading */
-	.team{
-		display: flex;
-		flex-direction: column;
-		justify-content: space-around;
-		align-items: center;
-		margin: 0 auto;
-	}
-	.team h1{
-		width: 70%;
-	}
-}
+
